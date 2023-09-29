@@ -34,12 +34,10 @@ const createIcon = (classes) => {
 }
 const removeItem = (e) => {
     if(e.target.parentElement.classList.contains('remove-item')){
-        console.log('Click');
         e.target.parentElement.parentElement.remove();
     }
 }
 const clearItems = (e) => {
-    items = itemList.querySelectorAll('li');
     while(itemList.firstChild){
         itemList.firstChild.remove();
     }
